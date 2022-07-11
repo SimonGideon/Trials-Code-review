@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Microverse Survey Form</h1>
+    <p id="description">
+      Kindly fill in the form below to help us serve you better.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Name"
+        value=""
+        name="name"
+        required
+      />
+      <label id="email-label" for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+        value=""
+        name="email"
+        required
+      />
+      <label id="number-label" for="age">Age (optional)</label>
+      <input
+        id="age"
+        type="number"
+        min="15"
+        max="90"
+        name="age"
+        value=""
+        placeholder="Age"
+      />
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender">
+        <option disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <label for="recommend">Would you recommend Microverse to a friend?</label><br>
+      <input id="recommend" type="radio" name="recommend" value="yes" /> Yes
+      <input type="radio" name="recommend" value="no" /> No
+      <input type="radio" name="recommend" value="maybe" /> Maybe<br>
+      <br><label for="likes">What have you liked most about the platform?</label><br>
+      <input id="likes" type="checkbox" name="likes" value="support" /> Support<br>
+      <input type="checkbox" name="likes" value="challenges" /> Challenges<br>
+      <input type="checkbox" name="likes" value="pair-programming" /> Pair
+      Programming<br> <input type="checkbox" name="likes" value="videos" /> Videos<br>
+      <input type="checkbox" name="likes" value="reading material" /> Reading
+      Material<br>
+      <input type="checkbox" name="likes" value="open source community" /> Open
+      Source Community <br><br>
+      <label for="comments">Any comments in addition to the above?</label><br>
+      <textarea
+        id="comments"
+        name="comments"
+        cols="30"
+        rows="20"
+        placeholder="Enter comments here..."
+      ></textarea>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
